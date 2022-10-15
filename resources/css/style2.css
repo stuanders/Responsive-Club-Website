@@ -1,0 +1,203 @@
+html {
+font-family: 'Montserrat', sans-serif;
+}
+
+.main-content {
+  position: relative;
+  top: 5.3125rem; /* To offset for fixed header. */
+  min-width: 500px;
+}
+
+/* header */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: solid 2px #c6c1c1;
+  background-color: white;
+  height: 5.3125rem;
+  z-index: 3;
+}
+
+.header-content {
+  display: flex;
+  padding: 1rem 1.875rem;
+}
+
+header .logo {
+  flex: 1;
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  color: #2c7428c9;
+}
+
+.logo:link {
+  text-decoration: none;
+}
+
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+
+}
+
+nav li {
+  padding-left: 3.5rem;
+
+}
+
+nav a {
+  line-height: 1.6rem;
+  font-size: 1.25rem;
+  color: #4a4a4a;
+  font-family: 'Cousine', monospace;
+}
+
+nav a:link {
+  text-decoration: none;
+}
+
+header .icon {
+  width: 1rem;
+  padding-left: .75rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+.material-symbols-outlined {
+  color: #efc961;
+}
+
+@media only screen and (max-width: 895px) {
+  header .desktop {
+    display: none;
+  }  
+
+  header .mobile {
+    display: flex;
+  }
+  
+  .header-content {
+    justify-content: flex-end;
+  }
+
+  header .material-symbols-outlined {
+    color: black;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  header .icon {
+    width: 2rem;
+  }
+
+  header .material-symbols-outlined {
+    font-size: 2rem;
+  }
+}
+  
+/* Main picture and follow us box */
+
+.banner-container {
+  width: 100%;
+  height: 45rem;
+  border-bottom: solid 2px #c6c1c1;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  z-index:0;
+}
+
+/* follow us box */
+
+.banner-box-container {
+  font-family: 'Cinzel', serif;
+  position: absolute;
+  right: 12.5625rem;
+  top: 32.125rem;
+  color: white;
+}
+
+.banner h2 {
+  font-size: 1.75rem;
+}
+
+.banner-box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner a {
+  color: tomato;
+  font-size: 2.5rem;
+  font-weight: bold;
+  transition: transform 1s;
+}
+
+.banner a:link {
+  text-decoration: none;
+}
+
+.banner a:hover {
+  transform: scale(1.5);
+  color: #fffdb2;
+}
+
+@media only screen and (max-width: 895px) {
+  .banner-box-container {
+    top: 32.125rem;
+    right:1.5625rem;
+  }
+
+  .banner h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-box-container {
+    top: 31rem;
+    right: 1rem;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+  }
+
+}
+
+footer {
+  border-bottom: solid 2px #c6c1c1;
+  display: flex;
+  height: auto;
+  position: absolute;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 86px;
+  align-items: center;
+  font-family: 'Cinzel', serif;
+  color: #2c7428c9;
+}
+
+footer h4 {
+  padding: 0 50px 0 50px;
+}
