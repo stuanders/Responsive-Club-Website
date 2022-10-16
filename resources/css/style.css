@@ -92,11 +92,11 @@ header .mobile {
 
 @media only screen and (max-width:600px) {
   header .icon {
-    width: 2rem;
+    width: 1.5rem;
   }
 
   header .material-symbols-outlined {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
   
@@ -172,8 +172,8 @@ header .mobile {
 
 @media only screen and (max-width: 600px) {
   .banner-box-container {
-    top: 19rem;
-    right: 7rem;
+    top: 26rem;
+    right: 4rem;
   }
 
   .banner h1 {
@@ -288,7 +288,7 @@ header .mobile {
   }
 
   #products .product-container {
-    width: 17rem;
+    width: 21rem;
   }
 }
 
@@ -413,7 +413,7 @@ header .mobile {
 footer {
   border-top: solid 2px #c6c1c1;
   display: flex;
-  height: 5.3125rem;
+  height: auto;
   position: absolute;
   justify-content: space-between;
   flex-direction: row;
@@ -421,6 +421,7 @@ footer {
   align-items: center;
   font-family: 'Cinzel', serif;
   color: #2c7428c9;
+  min-width: 500px;
 }
 
 footer h4 {
